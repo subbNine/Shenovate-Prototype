@@ -6,18 +6,18 @@ body {
   /* Navigation Bar */
   
   #home {
-    background-color:  rgb(36, 34, 34);
+    background-color: whitesmoke;
     padding-bottom: 1cm;
     margin-left:-1cm;
     margin-right:-1cm;
     margin-top:-1cm;
     padding-top: 2cm;
     padding-bottom: 2cm;
-    height: 5mm;
+    height: 0.1mm;
    }
   
   .topmenu {
-    color: lightgray;
+    color: #14283B;
     margin: 10px;
     padding: 20px;
     font-size: 20px;
@@ -59,7 +59,7 @@ body {
     font-size: 50px;
     text-align: center;
     float: left;
-    color: hsl(343, 93%, 45%)
+    color: #E00486;
     margin: 30px;
     margin-left: 60px;
     margin-top: 40px;
@@ -77,35 +77,36 @@ body {
     position: relative;
   }
   
-  /* Used in the About Me sections */
+  /* Used in the About US sections */
   
   .container {
     display: flex;
   }
   
-  /* About Me */
+  /* About Us */
   
-  #about-me {
+  #about-us {
     display: flex;
     align-items: center;
   }
   
-  #about-me .about-img {
+  #about-us .about-img {
     width: 40%;
     margin-right: auto;
   }
   
-  #about-me .about-text {
+  #about-us .about-text {
     width: 50%;
+    margin-left: auto;
   }
   
-  #about-me h1 {
-    font-size: 65px;
+  #about-us h1 {
+    font-size: 55px;
     margin-top: 90px;
     color: hsl(330, 86%, 46%);
   }
   
-  #about-me p {
+  #about-us p {
     font-size: 25px;
     color: rgb(128, 128, 128);
     margin-top: -1cm;
@@ -114,11 +115,11 @@ body {
   .profile_image {
     width: 550px;
     height: fit-content;
-    vertical-align: middle;
+    vertical-align: left;
     margin: 5px;
   }
   
-  /* Skills */
+  /* About Us */
   
   .all_skills {
     display: flex;
