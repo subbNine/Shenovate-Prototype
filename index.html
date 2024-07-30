@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Lato+3:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <script src="./script.js"></script>
   </head>
 
@@ -94,66 +96,49 @@
             
           </div>
       </section>
+
+      <div style="clear:both;"></div>
             
       <!-- Projects -->
       <section class="projects" id="projects">
-        <h2>
+        <h3 class="header">
           Projects
-        </h2>
-        <div style="clear:both;"></div>
+        </h3>
   
 
 
         <!-- New Design for project starts here -->
-        <section class="tutorials">
-          <h1> Most <span> popular </span>tutorials</h1> 
+        <div class="tutorials">
+          <h1> We are focused on celebrating and empowering  <span> young girls and Women </span>in Africa</h1> 
 
-            <div class="PopT">
-                <div>
-                    <img src="./assets/images/preview (1).png" alt="icon">
-                    <h2>Diagonal smile</h2>
-                    <p>Lorem ipsum dolor sit amet consect <br> adipisicing elit, sed do eiusmod.</p>
-                    
-                    <div class="img">
-                        <img src="./assets/images/avatar (4).png" alt="icon">
-                        <h3>Philip Massey</h3>
-                    </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./Images/Joy Offere Shenovate Tech Girls Meetup.jpg" alt="icon">
+                    <h3>She Emerges</h3>
+                    <p>Our Tech Girls Meetup hosted over 500 girls and young women<br> Connecting them with inspiring women in the tech field</p>
+                   
                 </div>
 
-                <div>
-                    <img src="./assets/images/preview (2).png" alt="icon">
-                    <h2>Sad smile</h2>
-                    <p>Lorem ipsum dolor sit amet consect <br> adipisicing elit, sed do eiusmod.</p>
-                    
-                    <div class="img">
-                        <img src="./assets/images/avatar (4).png" alt="icon">
-                        <h3>Philip Massey</h3>
-                    </div>
+                <div class="item">
+                    <img src="./Images/Joy Offere School Outreach.jpg" alt="icon">
+                    <h3>School Outreach</h3>
+                    <p>We provided STEM orientaion to adolecents <br>supporting theem to explore their interest</p>
                 </div>
 
-                <div>
-                    <img src="./assets/images/preview (3).png" alt="icon">
-                    <h2>Natural smile</h2>
-                    <p>Lorem ipsum dolor sit amet consect <br> adipisicing elit, sed do eiusmod.</p>
-                    
-                    <div class="img">
-                        <img src="./assets/images/avatar (4).png" alt="icon">
-                        <h3>Philip Massey</h3>
-                    </div>
+                <div class="item">
+                    <img src="./Images/International Women's Day.jpg" alt="icon">
+                    <h3>Internation Women's Day</h3>
+                    <p>We celebrated girls who are morphing in to women <br> And thier significate contribution to STEM</p>
                 </div>
 
-                <div>
-                    <img src="./assets/images/preview (4).png" alt="icon">
-                    <h2>Happy smile</h2>
-                    <p>Lorem ipsum dolor sit amet consect <br> adipisicing elit, sed do eiusmod.</p>
-                    
-                    <div class="img">
-                        <img src="./assets/images/avatar (4).png" alt="icon">
-                        <h3>Philip Massey</h3>
-                    </div>
+                <div class="item">
+                    <img src="./Images/Shenovate New Hackaton.jpg" alt="icon">
+                    <h3>Summer School</h3>
+                    <p>Currently implenting design thinking and problem solving <br> through a hackathon, empower highschool girls innnovation in Africa it</p>
                 </div>
+
             </div>
-        </section>
+          </div>
 
     
 
@@ -245,7 +230,7 @@
             <input type="text" placeholder="Name (Optional)"> <br/>
             <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
             <div class="flex_center">
-              <button id="recommend_btn" onclick="addRecommendation()" onClick="recommend_btn" >Submit</button>
+              <button id="form-button" onclick="addRecommendation()" onClick="recommend_btn" >Submit</button>
           
             </div>
           </fieldset>
@@ -282,7 +267,23 @@
       </div>
   
     </footer>  
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+          margin:10,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:3
+              },
+          }
+        });
+      });
+    </script>
     </body>
   </html>
 
