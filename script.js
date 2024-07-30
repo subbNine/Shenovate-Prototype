@@ -141,3 +141,4 @@ signoutButton.addEventListener("click", () => {
       alert(error.message);
     });
 });
+
