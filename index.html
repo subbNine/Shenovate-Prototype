@@ -1,150 +1,299 @@
 <!DOCTYPE html>
 <html>
-
-
   <head>
-    <meta charset="UTF-8">
-    <title>Shenovate-Prototype </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Lato+3:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-    <script src="./script.js"></script>
+    <meta charset="UTF-8" />
+    <title>Shenovate-Prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato+3:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
   </head>
 
-    <body>
-  
-    <section>
+  <body>
+    <nav class="navigation-bar">
+      <div class="logo-section">
+        <img
+          src="./Images/shenovate png_1.png"
+          alt="https://icons8.com/icon/124377/circled-envelope"
+        />
+      </div>
+      <div class="topdiv">
+        <a class="topmenu" href="#home">Home</a>
+        <a class="topmenu" href="#about_us">About Us</a>
+        <a class="topmenu" href="#projects">Projects</a>
+        <a class="topmenu" href="#courses" id="courses_link" style="display: none"
+          >Courses</a
+        >
+        <a class="topmenu" href="#Contact Us">Contact Us</a>
+        <a class="topmenu" href="#sign-up" id="login_register"
+          >Login/Register</a
+        >
+        <span class="topmenu" id="displayName"></span>
+        <span class="topmenu" id="sign_out" style="display: none"
+          >Sign Out</span
+        >
+
+        <!-- Add the links for Skills, Projects and Login/Register -->
+      </div>
+    </nav>
+    <section id="home" class="body-container">
       <!-- Navigation Bar -->
-      <nav>
-        <div id="home">
-      
-          <div class="profile_name">
-  
-            <div class="contact_info">
-              <img src="./Images/shenovate png_1.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          </div>
-  
-          <div style="clear:both;"></div>
-  
-          <div class="contact_info">
-  
-          </div>
-          </div>
-          <div class="topdiv">
-              <a class="topmenu" href="#home">Home</a>
-              <a class="topmenu" href="#about_us">About Us</a>
-              <a class="topmenu" href="#projects">Projects</a>
-              <a class="topmenu" href="#Courses">Courses</a>
-              <a class="topmenu" href="#Contact Us">Contact Us</a>
-              <a class="topmenu" href="#Login">Login/Register</a>
-  
-  
-              <!-- Add the links for Skills, Projects and Login/Register -->
-    
-            </div>
-          </div>    
-        </nav>
-    
-        <!-- About Me -->
-        <section id="about-me" class="container">
-          <div class="about-img">
-            <img src="./Images/image 6.png" class="profile_image"/>
-          </div>
-    
-          <div class="about-text">
-              <h1>
-                We are bridging the Gender Gap in Technology! 
-                
-              </h1>
-              <p>
-                Shenovate is a non-profit organization founded in Nigeria.<br>
-                That bridges the gender Gap In technology, by empowering</br>
-                girls and young women between the ages of 9-35 years, with Science, Technology, Engineering and Maths(STEM) 
-                through training in coding, robotics design and confidence skills to solve real-world problem
-              </p>
-          </div>
-        </section>
-                  
-        <!-- About Us -->
-        <section id="about_us">
-          <h2>About Us</h2>
-          <div style="clear:both;"></div>
-    
-          <div class="all_about-us">
-            <div class="about_us">
-              <img src="https://img.icons8.com/?size=100&id=pvRqtncLYdo4&format=png&color=000000"/>
-              <h6 class="skills_h6">Mission</h6>
-              <p>We are on a mission to bridge the gender gap in technology by empowering women and girls in Nigeria with the knowledge, skills, and support needed to excel in STEM fields.</p>
-            </div>  
-    
-            <div class="about_us">
-              <img src="https://img.icons8.com/?size=100&id=85028&format=png&color=000000"/>
-              
-              <h6 class="skills_h6">Vision</h6>
-              <p>We envision a future where women and girls have equal access to opportunities, resources, and support in S.T.E.M., enabling them to become leaders, innovators, and changemaker</p>
-            </div>  
-    
-            <div class="about_us">
-              <img src="https://img.icons8.com/?size=100&id=NMLICSPCZ9gW&format=png&color=000000"/>
-              <h6 class="skills_h6">Founders' Thought</h6>
-              <p>Innovation and progress come from diverse perspectives. By fostering an inclusive environment where women and girls can learn, grow, and lead, we aim to create a more equitable and dynamic tech community.</p>
-            </div>  
-  
-            <!-- Add more skills here -->
-            
-          </div>
+
+      <!-- About Me -->
+      <section id="about-me" class="container">
+        <div class="about-img">
+          <img src="./Images/image 6.png" class="profile_image" />
+        </div>
+
+        <div class="about-text">
+          <h1>We are bridging the Gender Gap in Technology!</h1>
+          <p>
+            Shenovate is a non-profit organization founded in Nigeria.<br />
+            That bridges the gender Gap In technology, by empowering<br />
+            girls and young women between the ages of 9-35 years, with Science,
+            Technology, Engineering and Maths(STEM) through training in coding,
+            robotics design and confidence skills to solve real-world problem
+          </p>
+        </div>
       </section>
 
-      <div style="clear:both;"></div>
-            
+      <!-- About Us -->
+      <section id="about_us">
+        <h2>About Us</h2>
+        <div style="clear: both"></div>
+
+        <div class="all_about-us">
+          <div class="about_us">
+            <img
+              src="https://img.icons8.com/?size=100&id=pvRqtncLYdo4&format=png&color=000000"
+            />
+            <h6 class="skills_h6">Mission</h6>
+            <p>
+              We are on a mission to bridge the gender gap in technology by
+              empowering women and girls in Nigeria with the knowledge, skills,
+              and support needed to excel in STEM fields.
+            </p>
+          </div>
+
+          <div class="about_us">
+            <img
+              src="https://img.icons8.com/?size=100&id=85028&format=png&color=000000"
+            />
+
+            <h6 class="skills_h6">Vision</h6>
+            <p>
+              We envision a future where women and girls have equal access to
+              opportunities, resources, and support in S.T.E.M., enabling them
+              to become leaders, innovators, and changemaker
+            </p>
+          </div>
+
+          <div class="about_us">
+            <img
+              src="https://img.icons8.com/?size=100&id=NMLICSPCZ9gW&format=png&color=000000"
+            />
+            <h6 class="skills_h6">Founders' Thought</h6>
+            <p>
+              Innovation and progress come from diverse perspectives. By
+              fostering an inclusive environment where women and girls can
+              learn, grow, and lead, we aim to create a more equitable and
+              dynamic tech community.
+            </p>
+          </div>
+
+          <!-- Add more skills here -->
+        </div>
+      </section>
+
+      <div style="clear: both"></div>
+
       <!-- Projects -->
       <section class="projects" id="projects">
-        <h3 class="header">
-          Projects
-        </h3>
-  
-
+        <h3 class="header">Projects</h3>
 
         <!-- New Design for project starts here -->
         <div class="tutorials">
-          <h1> We are focused on celebrating and empowering  <span> young girls and Women </span>in Africa</h1> 
+          <h1>
+            We are focused on celebrating and empowering
+            <span> young girls and Women </span>in Africa
+          </h1>
 
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <img src="./Images/Joy Offere Shenovate Tech Girls Meetup.jpg" alt="icon">
-                    <h3>She Emerges</h3>
-                    <p>Our Tech Girls Meetup hosted over 500 girls and young women<br> Connecting them with inspiring women in the tech field</p>
-                   
-                </div>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img
+                src="./Images/Joy Offere Shenovate Tech Girls Meetup.jpg"
+                alt="icon"
+                style="height: 380px; object-fit: cover; border-radius: 20px"
+              />
+              <h3>She Emerges</h3>
+              <p>
+                Our Tech Girls Meetup hosted over 500 girls and young women<br />
+                Connecting them with inspiring women in the tech field
+              </p>
+            </div>
 
-                <div class="item">
-                    <img src="./Images/Joy Offere School Outreach.jpg" alt="icon">
-                    <h3>School Outreach</h3>
-                    <p>We provided STEM orientaion to adolecents <br>supporting theem to explore their interest</p>
-                </div>
+            <div class="item">
+              <img
+                src="./Images/Joy Offere School Outreach.jpg"
+                alt="icon"
+                style="height: 380px; object-fit: cover; border-radius: 20px"
+              />
+              <h3>School Outreach</h3>
+              <p>
+                We provided STEM orientaion to adolecents <br />supporting theem
+                to explore their interest
+              </p>
+            </div>
 
-                <div class="item">
-                    <img src="./Images/International Women's Day.jpg" alt="icon">
-                    <h3>Internation Women's Day</h3>
-                    <p>We celebrated girls who are morphing in to women <br> And thier significate contribution to STEM</p>
-                </div>
+            <div class="item">
+              <img
+                src="./Images/International Women's Day.jpg"
+                alt="icon"
+                style="height: 380px; object-fit: cover; border-radius: 20px"
+              />
+              <h3>Internation Women's Day</h3>
+              <p>
+                We celebrated girls who are morphing in to women <br />
+                And thier significate contribution to STEM
+              </p>
+            </div>
 
-                <div class="item">
-                    <img src="./Images/Shenovate New Hackaton.jpg" alt="icon">
-                    <h3>Summer School</h3>
-                    <p>Currently implenting design thinking and problem solving <br> through a hackathon, empower highschool girls innnovation in Africa it</p>
-                </div>
-
+            <div class="item">
+              <img
+                src="./Images/Shenovate New Hackaton.jpg"
+                alt="icon"
+                style="height: 380px; object-fit: cover; border-radius: 20px"
+              />
+              <h3>Summer School</h3>
+              <p>
+                Currently implenting design thinking and problem solving <br />
+                through a hackathon, empower highschool girls innnovation in
+                Africa it
+              </p>
             </div>
           </div>
+        </div>
+      </section>
 
-    
+      <!-- Courses Starts here -->
+       <section id="courses" style="display: none; padding-block: 110px;">
+            <h2 style="text-align: center">Courses</h2>
+            <div>
+              <div id="course-container" class="courses-container">
+                <div class="project-card">
+                  <a href="https://www.coursera.org/">
+                    <h3> Google Coursera </h3>
+                  </a>
+                
+                  <ul>
+                    <li>Gain the skills to break into a new career or take your career to the next level.</li>
+                  </ul>
+                </div>
+                <hr>
+      
+                <div class="project-card">
+                  <a href="https://youtu.be/kMtNkJcJn3M?si=YkhB8a6fDkLTyUkr">
+                    <h3>YouTube</h3>
+                  </a>
+      
+                  <ul>
+                      <li>Build an Unshakeable Self-confidence; Use this toolkit</li>
+                  </ul>
+                </div>
+                <hr>
 
-        <!-- And ends here -->
+                <div class="project-card">
+                  <a href="https://codeinplace.stanford.edu/">
+                    <h3>Code in Place</h3>
+                  </a>
+                  <ul>
+                    <li> Join a community of 30,000 learn around the globe in programming</li>
+                  </ul>
+                </div>
+                <hr>
+      
+                <div class="project-card">
+                  <a href="https://chat.whatsapp.com/F5dgvCObSaF21z5HLRY0rC">
+                    <h3>Join our community</h3>
+                  </a>
+                  <ul>
+                    <li> Join our community for support on your personal Journey of growth, grit and progress, as a Tech Sis</li>
+                  </ul>
+                </div>
+          </div>
 
-          <!-- <div id="projects-container" class="projects-container">
+        </section>
+        
+      <div style="clear:both;"></div>
+
+      <!-- End of Courses Section -->
+
+      <section id="sign-up" style="padding-top: 80px">
+        <div class="signup-form-cont">
+          <div class="signup_form">
+            <h2 style="text-align: center">Sign up</h2>
+            <form>
+              <div class="input_cont">
+                <label>Full Name</label>
+                <input name="full_name" id="name" />
+              </div>
+              <div class="input_cont">
+                <label>Email</label>
+                <input type="email" id="email" />
+              </div>
+              <div class="input_cont">
+                <label>Password</label>
+                <input type="password" id="password" />
+              </div>
+              <button id="signup-button">Sign Up</button>
+            </form>
+          </div>
+
+          <div class="login_form">
+            <h2 style="text-align: center">Login</h2>
+            <form>
+              <div class="input_cont">
+                <label>Email</label>
+                <input type="email" id="login_email" />
+              </div>
+              <div class="input_cont">
+                <label>Password</label>
+                <input type="password" id="login_password" />
+              </div>
+              <button id="signin-button">Login</button>
+            </form>
+          </div>
+        </div>
+        <p
+          id="signup_text"
+          style="text-align: center; font-size: 18px; cursor: pointer"
+        >
+          If you already have an account click
+          <span style="text-decoration: underline">here to login</span>
+        </p>
+        <p
+          id="login_text"
+          style="text-align: center; font-size: 18px; cursor: pointer"
+        >
+          If you don't have an account click
+          <span style="text-decoration: underline">here to Sign up</span>
+        </p>
+      </section>
+
+      <!-- And ends here -->
+
+      <!-- <div id="projects-container" class="projects-container">
             <div class="project-card">
   
               <a href="https://joyoffere.github.io/Web-APIs_Group_7/index.html">
@@ -188,109 +337,133 @@
       </div>
       </section>
       <div style="clear:both;"></div> -->
-  
+
       <!-- Recommendations -->
       <section id="recommendations">
         <h2>Recommendations</h2>
-        <div style="clear:both;"></div>
+        <div style="clear: both"></div>
         <div class="all_recommendations" id="all_recommendations">
           <div class="recommendation">
             <span>&#8220;</span>
-            Joy is a very quick learner and quickly grasps key concepts of Web development. 
-            She got a great attitude & she is an excellent team player. 
-            She has a curious mind and asks the right question. 
-            She takes initiative within a team and has potentials to lead the team.
+            Joy is a very quick learner and quickly grasps key concepts of Web
+            development. She got a great attitude & she is an excellent team
+            player. She has a curious mind and asks the right question. She
+            takes initiative within a team and has potentials to lead the team.
             <span>&#8221;</span>
           </div>
-  
+
           <div class="recommendation">
             <span>&#8220;</span>
-            Working with Joy has been an awesome experience. 
-            She is highly knowledgable and always goes the extra step to make sure everything is right. 
-            For any future projects that need her expertise I would definitely want to work with her again.
+            Working with Joy has been an awesome experience. She is highly
+            knowledgable and always goes the extra step to make sure everything
+            is right. For any future projects that need her expertise I would
+            definitely want to work with her again.
             <span>&#8221;</span>
           </div>
-  
+
           <div class="recommendation">
             <span>&#8220;</span>
-            I had worked along with Joy during the initial phase of our venture which needed Web development. 
-            She is a committed resource who has in depth knowledge about the domain. 
-            She will be an asset for any organisation! 
+            I had worked along with Joy during the initial phase of our venture
+            which needed Web development. She is a committed resource who has in
+            depth knowledge about the domain. She will be an asset for any
+            organisation!
             <span>&#8221;</span>
           </div>
         </div>
       </section>
-  
-  
+
       <!-- Recommendation Form -->
-      <section id="contact">
+      <section id="contact" class="recommendation_form">
         <div class="flex_center">
-          <fieldset>
-            <legend class="introduction">Leave a Recommendation</legend>          
-            <input type="text" placeholder="Name (Optional)"> <br/>
-            <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-            <div class="flex_center">
-              <button id="form-button" onclick="addRecommendation()" onClick="recommend_btn" >Submit</button>
-          
+          <form>
+            <h1 class="introduction">Leave a Recommendation</h1>
+            <div>
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Name (Optional)" />
             </div>
-          </fieldset>
+            <div>
+              <label for="name">Message</label>
+              <textarea
+                id="message"
+                cols="500"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <div class="flex_center">
+              <button
+                class="recommendation_form-button"
+                onclick="addRecommendation()"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
       </section>
-   
-  
     </section>
-  
-    
-  
+
     <!-- footer design section -->
     <footer class="footer">
-  
-     <div class="footer-text">
-         <p>Copyright &copy; by Joy Offere | All Rights Reserved.</p>
-     </div>
-     <!-- Working area -->
-  
-      
+      <div class="footer-text">
+        <p>Copyright &copy; by Joy Offere | All Rights Reserved.</p>
+      </div>
+      <!-- Working area -->
+
       <div class="iconbutton">
         <a href="#home">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="white"
+            width="63px"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
           <!--Add the code here for the logo to appear and the icon to be actionable-->
         </a>
       </div>
-  
+
       <div class="popup" id="popup" class="flex_center">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/antdesign/antdesign-plain.svg"/>
+        <img
+          src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/antdesign/antdesign-plain.svg"
+        />
         <h3>Thank you for Leaving me a Recommendation</h3>
         <button onclick="showPopup(false)">Ok</button>
       </div>
-  
-    </footer>  
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
-      $(document).ready(function(){
+      $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
-          margin:10,
-          responsive:{
-              0:{
-                  items:1
-              },
-              600:{
-                  items:3
-              },
-          }
+          margin: 10,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+          },
         });
       });
     </script>
-    </body>
-  </html>
-
-
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"
+    ></script>
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"
+    ></script>
+    <script type="module" src="./script.js"></script>
+  </body>
 </html>
-
-   
-
-
-
