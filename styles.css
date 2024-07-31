@@ -4,6 +4,14 @@ body {
   overflow-x: hidden;
 }
 
+.verification {
+   height: 30px;
+   color: whitesmoke;
+   font-style: italic;
+   background-color: #14283B;
+   text-align: center;
+   font-size: medium;
+}
 .body-container {
   position: relative;
   max-width: 1400px;
@@ -22,10 +30,13 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-inline: 50px;
+  padding-block: 10px;
+}
+
+.navigation {
   position: sticky;
   top: 0;
-  z-index: 2;
-  padding-block: 10px;
+  z-index: 2
 }
 
 .logo-section img {
@@ -403,4 +414,16 @@ button:hover {
 .input_cont {
   display: flex;
   flex-direction: column;
+}
+
+.banner {
+  height: 40px;
+  text-align: center;
+  background-color: #14283b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  display: none
 }

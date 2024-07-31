@@ -97,20 +97,26 @@ signupButton.addEventListener("click", (e) => {
 });
 
 onAuthStateChanged(auth, (user) => {
-  if (user) {
-    document.querySelector("#login_register").style.display = "none";
-    const name = document.querySelector("#displayName");
-    signoutButton.style.display = "inline";
-    document.querySelector("#courses_link").style.display = "inline";
-    document.querySelector("#sign-up").style.display = "none";
-    document.querySelector("#courses").style.display = "block";
-    // User is signed in
-    name.innerHTML = user.displayName;
-  } else {
-    // User is signed out
-    console.log("User is signed out");
-  }
-});
+    if (user) {
+      document.querySelector("#login_register").style.display = "none";
+      const name = document.querySelector("#displayName");
+      signoutButton.style.display = "inline";
+      if (user.emailVerified) {
+        document.querySelector("#courses_link").style.display = "inline";
+        document.querySelector("#courses").style.display = "block";
+      }
+      document.querySelector("#sign-up").style.display = "none";
+      // User is signed in
+      name.innerHTML = user.displayName;
+      if (!user.emailVerified) {
+        document.querySelector(".banner").style.display = "flex";
+      }
+    } else {
+      // User is signed out
+      console.log("User is signed out");
+    }
+  });
+  
 
 // // Sign in function
 signinButton.addEventListener("click", (e) => {
